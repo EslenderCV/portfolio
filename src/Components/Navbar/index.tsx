@@ -2,12 +2,14 @@ import { Box } from "@mui/material";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Link from "../Link";
+import { Dispatch, SetStateAction } from "react";
 
 interface Props {
   page: string;
+  setPage: Dispatch<SetStateAction<string>>;
 }
 
-const index = ({ page }: Props) => {
+const index = ({ page, setPage }: Props) => {
   return (
     <nav>
       <Box
@@ -43,10 +45,10 @@ const index = ({ page }: Props) => {
               gap: 3,
             }}
           >
-            <Link pageName="Home" page={page} />
-            <Link pageName="Skills" page={page} />
-            <Link pageName="Projects" page={page} />
-            <Link pageName="Contact" page={page} />
+            <Link pageName="Home" page={page} setPage={setPage} />
+            <Link pageName="Skills" page={page} setPage={setPage} />
+            <Link pageName="Projects" page={page} setPage={setPage} />
+            <Link pageName="Contact" page={page} setPage={setPage} />
             <p> | </p>
             <a
               href="https://www.linkedin.com/in/eslender-cruz/"

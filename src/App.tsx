@@ -1,13 +1,13 @@
 import Navbar from "../src/Components/Navbar";
 import { useState } from "react";
 
-const [page, setPage] = useState("");
-
 function App() {
+  const [page, setPage] = useState("home");
+
   return (
     <>
       <div className="app">
-        <Navbar page={page} />
+        <Navbar page={page} setPage={setPage} />
       </div>
     </>
   );
