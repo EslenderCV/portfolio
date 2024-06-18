@@ -1,8 +1,13 @@
 import { Box } from "@mui/material";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import Link from "../Link";
 
-const index = () => {
+interface Props {
+  page: string;
+}
+
+const index = ({ page }: Props) => {
   return (
     <nav>
       <Box
@@ -38,10 +43,10 @@ const index = () => {
               gap: 3,
             }}
           >
-            <p>Home</p>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Contact</p>
+            <Link pageName="Home" page={page} />
+            <Link pageName="Skills" page={page} />
+            <Link pageName="Projects" page={page} />
+            <Link pageName="Contact" page={page} />
             <p> | </p>
             <a
               href="https://www.linkedin.com/in/eslender-cruz/"
