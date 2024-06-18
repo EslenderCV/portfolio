@@ -7,9 +7,10 @@ import { Dispatch, SetStateAction } from "react";
 interface Props {
   page: string;
   setPage: Dispatch<SetStateAction<string>>;
+  isOnTop: boolean;
 }
 
-const index = ({ page, setPage }: Props) => {
+const index = ({ page, setPage, isOnTop }: Props) => {
   return (
     <nav>
       <Box
@@ -18,6 +19,10 @@ const index = ({ page, setPage }: Props) => {
           position: "fixed",
           width: "100vw",
           justifyContent: "space-between",
+          zIndex: "30",
+          background: isOnTop ? "" : "#CAF4FF",
+          filter:
+            "drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06))",
         }}
       >
         <Box
