@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap");
 #root,
 .app,
 html,
@@ -13,7 +13,7 @@ body {
 }
 
 .dev {
-  color: rgb(46, 67, 255);
+  color: #028391;
 }
 
 .title {
@@ -35,5 +35,10 @@ a {
 }
 
 .photo {
-  border-radius: 10px;
+  border-radius: 5px 5px 3px 3px;
+  border: 1px solid black;
+}
+
+.int {
+  font-size: 15px;
 }

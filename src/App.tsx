@@ -1,7 +1,7 @@
 import Navbar from "../src/Components/Navbar";
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
-
+import Skills from "./pages/Skills";
 function App() {
   const [page, setPage] = useState("home");
   const [isOnTop, setIsOnTop] = useState<boolean>(true);
@@ -22,7 +22,8 @@ function App() {
     <>
       <div className="app">
         <Navbar isOnTop={isOnTop} page={page} setPage={setPage} />
-        <Home />
+        <Home page={page} setPage={setPage} />
+        <Skills />
       </div>
     </>
   );
