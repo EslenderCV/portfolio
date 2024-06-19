@@ -32,16 +32,11 @@ const Home = ({ page, setPage }: Props) => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                textAlign: "center",
                 justifyContent: "center",
               }}
             >
-              <h2
-                style={{
-                  color: "#028391",
-                }}
-              >
-                &#60;/&#62; Full-Stack Developer
-              </h2>
+              <h2 className="dev">&#60;/&#62; Full-Stack Developer</h2>
               <p>
                 Hello and welcome! I'm Eslender, a dedicated full stack
                 developer deeply enthusiastic about crafting robust web

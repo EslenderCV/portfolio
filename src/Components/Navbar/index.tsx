@@ -20,6 +20,7 @@ const index = ({ page, setPage, isOnTop }: Props) => {
           width: "100vw",
           justifyContent: "space-between",
           zIndex: 30,
+          transition: ".3s",
           background: "rgb(234, 246, 255)",
           filter: isOnTop
             ? ""
