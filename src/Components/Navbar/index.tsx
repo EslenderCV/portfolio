@@ -53,7 +53,7 @@ const index = ({ page, setPage, isOnTop }: Props) => {
             }}
           >
             <Link pageName="Home" page={page} setPage={setPage} />
-            <Link pageName="Skills" page={page} setPage={setPage} />
+            <Link pageName="Toolset" page={page} setPage={setPage} />
             <Link pageName="Projects" page={page} setPage={setPage} />
             <Link pageName="Contact" page={page} setPage={setPage} />
             <p> | </p>

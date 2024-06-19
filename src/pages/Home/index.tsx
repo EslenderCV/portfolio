@@ -14,10 +14,8 @@ const Home = ({ page, setPage }: Props) => {
         sx={{
           display: "flex",
           justifyContent: "space-evenly",
-          padding: "20px 10px 10px 10px",
           alignItems: "center",
           height: "89vh",
-          marginTop: "88x",
         }}
       >
         <Box
@@ -41,13 +39,13 @@ const Home = ({ page, setPage }: Props) => {
                 Hello and welcome! I'm Eslender, a dedicated full stack
                 developer deeply enthusiastic about crafting robust web
                 applications and delivering seamless user experiences. I thrive
-                on tackling challenges and continuously expanding my skills to
+                on tackling challenges and continuously expanding my Toolset to
                 create innovative solutions.
               </p>
               <p>
                 Take a look at my{" "}
                 <u>
-                  <Link pageName="skills" page={page} setPage={setPage} />
+                  <Link pageName="Toolset" page={page} setPage={setPage} />
                 </u>{" "}
                 and{" "}
                 <u>
