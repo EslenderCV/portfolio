@@ -76,7 +76,7 @@ const Toolset = () => {
             padding: 1,
             paddingTop: 3,
             marginTop: 6,
-            backgroundColor: "#FFF7FC",
+            backgroundColor: "#EEEEFF" /* #FFF7FC */,
             borderRadius: 4,
           }}
         >
