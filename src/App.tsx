@@ -12,11 +12,14 @@ function App() {
         setIsOnTop(true);
         setPage("home");
       }
-
-      if (window.scrollY !== 0) setIsOnTop(false);
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
+      console.log(window.scrollY);
+      if (window.scrollY !== 0) {
+        setIsOnTop(false);
+      }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <>

@@ -20,9 +20,10 @@ const index = ({ page, setPage, isOnTop }: Props) => {
           width: "100vw",
           justifyContent: "space-between",
           zIndex: 30,
-          background: isOnTop ? "" : "#CAF4FF",
-          filter:
-            "drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06))",
+          background: "rgb(234, 246, 255)",
+          filter: isOnTop
+            ? ""
+            : "drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06))",
         }}
       >
         <Box

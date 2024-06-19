@@ -1,17 +1,16 @@
 import { Box } from "@mui/material";
-import { SlDirection } from "react-icons/sl";
 
 const Skills = () => {
   return (
-    <SlDirection id="skills">
+    <section id="skills">
       <Box
         sx={{
           height: "70vh",
         }}
       >
-        <h2>Skills</h2>
+        <h2>skills</h2>
       </Box>
-    </SlDirection>
+    </section>
   );
 };
 
