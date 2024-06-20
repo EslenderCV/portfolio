@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import Link from "../../Components/Link";
 import { SetStateAction, Dispatch } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 interface Props {
   page: string;
@@ -34,7 +35,20 @@ const Home = ({ page, setPage }: Props) => {
                 justifyContent: "center",
               }}
             >
-              <h2 className="dev">&#60;/&#62; Full-Stack Developer</h2>
+              <h2 className="dev" style={{ display: "flex", gap: 1 }}>
+                <TypeAnimation
+                  sequence={[
+                    "<Front-end",
+                    1000,
+                    "<Back-end",
+                    1000,
+                    "<Full-Stack Developer />",
+                  ]}
+                  wrapper="div"
+                  cursor={true}
+                  repeat={0}
+                />
+              </h2>
               <p>
                 Hello and welcome! I'm Eslender, a dedicated full stack
                 developer deeply enthusiastic about crafting robust web
@@ -45,7 +59,7 @@ const Home = ({ page, setPage }: Props) => {
               <p>
                 Take a look at my{" "}
                 <u>
-                  <Link pageName="Toolset" page={page} setPage={setPage} />
+                  <Link pageName="toolset" page={page} setPage={setPage} />
                 </u>{" "}
                 and{" "}
                 <u>

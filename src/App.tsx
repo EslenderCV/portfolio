@@ -2,6 +2,7 @@ import Navbar from "../src/Components/Navbar";
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Toolset from "./pages/Toolset";
+import Contact from "./pages/Contact";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -27,8 +28,8 @@ function App() {
       <div className="app">
         <Navbar isOnTop={isOnTop} page={page} setPage={setPage} />
         <Home page={page} setPage={setPage} />
-        <br />
         <Toolset />
+        <Contact />
       </div>
     </>
   );

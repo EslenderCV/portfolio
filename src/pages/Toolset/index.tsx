@@ -15,7 +15,7 @@ const tools = [
     img: "../../../src/assets/javaLogo.png",
   },
   {
-    name: "Spring Boot",
+    name: "Spring",
     img: "../../../src/assets/spring.png",
   },
   {
@@ -66,18 +66,20 @@ const Toolset = () => {
             display: "grid",
             gridTemplateColumns: {
               lg: "auto auto auto auto",
+              md: "auto auto auto",
               sm: "auto auto",
               xs: "auto",
             },
             maxHeight: "700px",
-            width: "80%",
+            width: "100%",
             justifyContent: "space-evenly",
             alignItems: "center",
             padding: 1,
             paddingTop: 3,
             marginTop: 6,
-            backgroundColor: "#EEEEFF" /* #FFF7FC */,
-            borderRadius: 4,
+            backgroundColor: "#548CA8" /* #FFF7FC */,
+            color: "white",
+            fontWeight: "bold",
           }}
         >
           {tools.map((item) => {
@@ -93,7 +95,6 @@ const Toolset = () => {
                     "&:hover": {
                       scale: "1.05",
                       cursor: "pointer",
-                      fontWeight: "bold",
                     },
                   }}
                 >
