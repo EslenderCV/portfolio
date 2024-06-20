@@ -8,7 +8,11 @@ interface Props {
 const Projects = ({ setPage }: Props) => {
   return (
     <motion.section id="projects" onViewportEnter={() => setPage("projects")}>
-      <h2 className="int dev">These are my projects!</h2>
+      <code>
+        <h2 className="int dev" style={{ fontSize: "22px" }}>
+          These are my projects!
+        </h2>
+      </code>
     </motion.section>
   );
 };

@@ -30,8 +30,8 @@ function App() {
         <Navbar isOnTop={isOnTop} page={page} setPage={setPage} />
         <Home page={page} setPage={setPage} />
         <Toolset setPage={setPage} />
-        <Contact setPage={setPage} />
         <Projects setPage={setPage} />
+        <Contact setPage={setPage} />
       </div>
     </>
   );
