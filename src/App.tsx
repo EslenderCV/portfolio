@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Toolset from "./pages/Toolset";
 import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -30,6 +31,7 @@ function App() {
         <Home page={page} setPage={setPage} />
         <Toolset />
         <Contact />
+        <Projects />
       </div>
     </>
   );
