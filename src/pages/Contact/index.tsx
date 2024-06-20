@@ -2,10 +2,16 @@ import { UserCircleIcon } from "@heroicons/react/16/solid";
 import { Box } from "@mui/material";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { Dispatch, SetStateAction } from "react";
 
-const Contact = () => {
+interface Props {
+  setPage: Dispatch<SetStateAction<string>>;
+}
+
+const Contact = ({ setPage }: Props) => {
   return (
-    <section id="contact">
+    <motion.section onViewportEnter={() => setPage("contact")} id="contact">
       <Box
         sx={{
           margin: "20px",
@@ -107,7 +113,7 @@ const Contact = () => {
           </Box>
         </Box>
       </Box>
-    </section>
+    </motion.section>
   );
 };
 

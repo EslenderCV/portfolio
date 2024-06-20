@@ -1,5 +1,7 @@
 import { AcademicCapIcon } from "@heroicons/react/16/solid";
 import { Box } from "@mui/material";
+import { motion } from "framer-motion";
+import { SetStateAction, Dispatch } from "react";
 
 const tools = [
   {
@@ -36,9 +38,13 @@ const tools = [
   },
 ];
 
-const Toolset = () => {
+interface Props {
+  setPage: Dispatch<SetStateAction<string>>;
+}
+
+const Toolset = ({ setPage }: Props) => {
   return (
-    <section id="toolset">
+    <motion.section id="toolset" onViewportEnter={() => setPage("toolset")}>
       <Box
         sx={{
           width: "100%",
@@ -106,7 +112,7 @@ const Toolset = () => {
           })}
         </Box>
       </Box>
-    </section>
+    </motion.section>
   );
 };
 

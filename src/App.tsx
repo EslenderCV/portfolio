@@ -29,9 +29,9 @@ function App() {
       <div className="app">
         <Navbar isOnTop={isOnTop} page={page} setPage={setPage} />
         <Home page={page} setPage={setPage} />
-        <Toolset />
-        <Contact />
-        <Projects />
+        <Toolset setPage={setPage} />
+        <Contact setPage={setPage} />
+        <Projects setPage={setPage} />
       </div>
     </>
   );
