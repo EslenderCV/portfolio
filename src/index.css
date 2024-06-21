@@ -51,10 +51,10 @@ a {
   height: 100%;
 }
 
-#contact {
-  height: 40%;
+.carrousel {
+  width: 700px;
 }
 
-#projects {
-  height: 50%;
+.container {
+  width: 100%;
 }
