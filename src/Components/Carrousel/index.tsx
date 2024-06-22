@@ -27,7 +27,7 @@ const Carrousel = () => {
         }}
         pagination={{ el: "" }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="container"
+        className="container" 
       >
         {sliderImgs.map((item, idx) => {
           return (
